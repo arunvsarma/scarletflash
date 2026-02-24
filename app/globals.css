@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --scarlet:  #c8102e;
+  --ember:    #8b0b1f;
+  --carbon:   #1a1a1a;
+  --chalk:    #f5f4f0;
+  --muted:    #777777;
+  --bg:       #080808;
+}
+
+@theme inline {
+  --font-afacad: var(--font-afacad);
+  --font-outfit: var(--font-outfit);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: #ffffff;
+}
+
+/* Input focus handled at the container level */
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+/* Form field hover + focus ring */
+.field-wrap:hover,
+.field-wrap:focus-within {
+  outline: 1px solid var(--ember);
+  outline-offset: -1px;
+}
+
+/* Placeholder label fades out when field is focused */
+.field-label {
+  transition: opacity 0.15s ease;
+}
+.field-wrap:focus-within .field-label {
+  opacity: 0;
+}
