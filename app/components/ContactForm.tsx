@@ -45,9 +45,6 @@ function FormField({
 export default function ContactForm() {
   return (
     <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
       className="flex flex-col gap-4"
       onSubmit={(e) => e.preventDefault()}
       aria-label="Contact form"
