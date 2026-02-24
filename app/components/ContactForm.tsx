@@ -90,20 +90,23 @@ export default function ContactForm() {
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const body = new URLSearchParams({
+        "form-name": "contact",
+        ...fields,
+      }).toString();
+
+      const res = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(fields),
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body,
       });
 
-      const data = await res.json();
-
-      if (!res.ok) {
-        setErrorMsg(data.error ?? "Something went wrong.");
-        setStatus("error");
-      } else {
+      if (res.ok) {
         setStatus("success");
         setFields(EMPTY);
+      } else {
+        setErrorMsg("Something went wrong. Please try again.");
+        setStatus("error");
       }
     } catch {
       setErrorMsg("Network error. Please check your connection and try again.");
@@ -139,11 +142,14 @@ export default function ContactForm() {
 
   return (
     <form
+      name="contact"
+      data-netlify="true"
       className="flex flex-col gap-4"
       onSubmit={handleSubmit}
       noValidate
       aria-label="Contact form"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <FormField
           label="YOUR NAME"
