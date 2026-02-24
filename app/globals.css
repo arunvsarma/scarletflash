@@ -40,6 +40,7 @@ textarea:focus-visible {
 .field-label {
   transition: opacity 0.15s ease;
 }
-.field-wrap:focus-within .field-label {
+.field-wrap:focus-within .field-label,
+.field-wrap.has-value .field-label {
   opacity: 0;
 }
