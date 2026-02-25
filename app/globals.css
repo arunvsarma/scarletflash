@@ -52,3 +52,24 @@ textarea:focus-visible {
 .btn-elastic:active {
   transform: scale(0.94);
 }
+
+/* Hero background node animations */
+@keyframes node-glow {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50%       { opacity: 1;    transform: scale(1.3); }
+}
+@keyframes node-ripple {
+  0%   { transform: scale(1);  opacity: 0.65; }
+  100% { transform: scale(14); opacity: 0; }
+}
+.node-dot {
+  will-change: opacity, transform;
+  animation: node-glow var(--dur, 3.5s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+.node-ring {
+  will-change: transform, opacity;
+  transform-origin: center;
+  animation: node-ripple var(--ring-dur, 4s) ease-out infinite;
+  animation-delay: var(--ring-delay, 0s);
+}

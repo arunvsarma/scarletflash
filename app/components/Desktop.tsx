@@ -33,6 +33,67 @@ function PrimaryButton({ label, href = "#contact" }: { label: string; href?: str
   );
 }
 
+/* ─── Hero background nodes ────────────────────────────────────────────────── */
+
+// Scattered randomly across the hero section
+const HERO_NODES = [
+  { x: "8%",  y: "14%", size: 5,   dur: "3.2s", delay: "0.0s", rdur: "3.8s", rdelay: "0.4s" },
+  { x: "22%", y: "72%", size: 4,   dur: "4.1s", delay: "1.3s", rdur: "4.2s", rdelay: "0.8s" },
+  { x: "38%", y: "24%", size: 6,   dur: "3.6s", delay: "0.7s", rdur: "3.5s", rdelay: "0.2s" },
+  { x: "51%", y: "82%", size: 4.5, dur: "4.8s", delay: "2.1s", rdur: "4.6s", rdelay: "1.1s" },
+  { x: "63%", y: "40%", size: 5.5, dur: "3.4s", delay: "0.4s", rdur: "4.0s", rdelay: "0.6s" },
+  { x: "77%", y: "16%", size: 4,   dur: "5.0s", delay: "1.8s", rdur: "4.8s", rdelay: "0.3s" },
+  { x: "88%", y: "64%", size: 5,   dur: "3.7s", delay: "0.9s", rdur: "3.6s", rdelay: "1.3s" },
+  { x: "14%", y: "46%", size: 6,   dur: "4.3s", delay: "2.4s", rdur: "4.4s", rdelay: "0.7s" },
+  { x: "45%", y: "56%", size: 4,   dur: "3.9s", delay: "1.1s", rdur: "3.9s", rdelay: "0.5s" },
+  { x: "71%", y: "78%", size: 5,   dur: "4.6s", delay: "0.2s", rdur: "4.1s", rdelay: "1.0s" },
+  { x: "93%", y: "32%", size: 4.5, dur: "3.3s", delay: "1.6s", rdur: "3.7s", rdelay: "0.9s" },
+  { x: "30%", y: "88%", size: 5.5, dur: "4.4s", delay: "2.8s", rdur: "4.5s", rdelay: "0.1s" },
+  { x: "57%", y: "10%", size: 4,   dur: "3.8s", delay: "0.5s", rdur: "4.3s", rdelay: "0.6s" },
+  { x: "82%", y: "90%", size: 5,   dur: "4.2s", delay: "1.9s", rdur: "3.8s", rdelay: "1.2s" },
+];
+
+function HeroNodes() {
+  return (
+    <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+      {HERO_NODES.map((n, i) => (
+        /* Anchor div: centered exactly at (x%, y%) via translate */
+        <div
+          key={i}
+          className="absolute"
+          style={{
+            left: n.x,
+            top: n.y,
+            width: n.size,
+            height: n.size,
+            transform: "translate(-50%, -50%)",
+          }}
+        >
+          {/* Ripple ring — scales outward and fades */}
+          <div
+            className="node-ring absolute inset-0 rounded-full"
+            style={{
+              border: "1.5px solid #c8102e",
+              "--ring-dur": n.rdur,
+              "--ring-delay": n.rdelay,
+            } as React.CSSProperties}
+          />
+          {/* Solid glowing dot — breathes in opacity + scale */}
+          <div
+            className="node-dot absolute inset-0 rounded-full"
+            style={{
+              background: "#c8102e",
+              boxShadow: "0 0 10px 4px rgba(200,16,46,0.8)",
+              "--dur": n.dur,
+              "--delay": n.delay,
+            } as React.CSSProperties}
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /* ─── Hero ─────────────────────────────────────────────────────────────────── */
 
 function Hero() {
@@ -54,6 +115,8 @@ function Hero() {
         />
       </div>
 
+      <HeroNodes />
+
       <div className="relative max-w-[1440px] mx-auto px-4 sm:px-8">
         <SectionEyebrow label="CREATIVE + TECH CONSULTING" />
 
@@ -69,10 +132,7 @@ function Hero() {
           className="mt-8 text-base text-[#777] leading-[24px] max-w-[655px]"
           style={{ fontFamily: outfit }}
         >
-          ScarletFlash Consulting brings 20+ years of design, product, and technology expertise to
-          the ideas that matter most to your business. Whether you are reimagining user experience,
-          automating complex workflows, or driving a full digital transformation — we provide the
-          clarity, direction, and momentum to turn vision into reality.
+          ScarletFlash Consulting brings 20+ years of expertise across design, product, and technology to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter. We bring the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
         </p>
 
         <div className="mt-10">
