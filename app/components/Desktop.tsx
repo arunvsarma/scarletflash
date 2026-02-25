@@ -24,7 +24,7 @@ function PrimaryButton({ label, href = "#contact" }: { label: string; href?: str
   return (
     <a
       href={href}
-      className="relative inline-flex items-center justify-center gap-4 h-10 overflow-hidden bg-[#c8102e] px-6 font-semibold text-base text-white tracking-[2.08px] whitespace-nowrap hover:bg-[#a00d25] transition-colors"
+      className="btn-elastic relative inline-flex items-center justify-center gap-4 h-10 overflow-hidden bg-[#c8102e] px-6 font-semibold text-base text-white tracking-[2.08px] whitespace-nowrap hover:bg-[#a00d25] transition-colors"
       style={{ fontFamily: afacad }}
     >
       <span style={{ width: 144 }}>{label}</span>

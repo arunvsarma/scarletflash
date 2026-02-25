@@ -52,7 +52,7 @@ function FormField({
           onChange={onChange}
           required={required}
           minLength={minLength}
-          className="absolute inset-0 w-full h-full bg-transparent resize-none px-4 pt-8 pb-3 text-white text-sm outline-none"
+          className="absolute inset-0 w-full h-full bg-transparent resize-none px-4 pt-4 pb-3 text-white text-sm outline-none"
           style={{ fontFamily: outfit }}
           aria-label={label}
         />
@@ -208,7 +208,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="relative inline-flex items-center justify-center gap-4 h-10 overflow-hidden bg-[#c8102e] px-6 font-semibold text-base text-white tracking-[2.08px] whitespace-nowrap hover:bg-[#a00d25] transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
+          className="btn-elastic relative inline-flex items-center justify-center gap-4 h-10 overflow-hidden bg-[#c8102e] px-6 font-semibold text-base text-white tracking-[2.08px] whitespace-nowrap hover:bg-[#a00d25] transition-colors cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
           style={{ fontFamily: afacad }}
         >
           <span style={{ width: 144 }}>

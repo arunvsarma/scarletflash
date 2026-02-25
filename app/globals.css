@@ -44,3 +44,11 @@ textarea:focus-visible {
 .field-wrap.has-value .field-label {
   opacity: 0;
 }
+
+/* Elastic press effect for buttons */
+.btn-elastic {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-elastic:active {
+  transform: scale(0.94);
+}

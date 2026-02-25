@@ -71,7 +71,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <a
             href="#contact"
-            className="hidden lg:flex relative items-center justify-end overflow-hidden border border-[#c8102e] h-10 px-4 gap-2 font-semibold text-base tracking-[2.8px] whitespace-nowrap text-[#c8102e] transition-colors hover:bg-[#c8102e]/10"
+            className="hidden lg:flex relative items-center justify-end overflow-hidden border border-[#c8102e] h-10 px-4 gap-2 font-semibold text-base tracking-[2.8px] whitespace-nowrap text-[#c8102e] transition-colors duration-300 ease-in-out hover:bg-[#c8102e] hover:text-white"
             style={{ fontFamily: afacad }}
           >
             START A PROJECT
