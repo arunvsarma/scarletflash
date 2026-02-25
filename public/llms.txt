@@ -3,31 +3,33 @@
 > Creative + Tech Consulting — Where Ideas Ignite
 
 ScarletFlash Consulting blends 20+ years of design, product, technology, and leadership expertise
-to reimagine possibilities and drive next-generation digital transformation. We work with founders,
-product teams, and enterprises exploring UX upgrades, workflow automation, and digital
-transformation initiatives.
+to drive next-generation digital transformation. We partner with founders, product teams, and
+enterprises to solve hard problems in product design, technology strategy, and project execution.
 
+- Website: https://scarletflash.io
 - Contact: arun.sarma@live.in
-- Location: Bengaluru, India
-- Website: https://scarletflash.com
+- Location: Bengaluru, India (serving clients globally)
 
 ## Services
 
 ### Product Design + UX
-Interfaces that think ahead of the user. We prototype, test, and refine until the experience feels
-effortless — because good design converts.
+From first click to final step — intuitive, purposeful design that turns complexity into
+experiences users love. We prototype, test, and refine until the experience feels effortless,
+because good design converts.
 
 ### Tech Strategy + Automation
-Stack audits, automation opportunities, and eliminating repetitive work so your team can focus on
-what matters.
+Strategic solutions that eliminate friction, automate the complex, and unlock real efficiency.
+Stack audits, automation opportunities, and eliminating repetitive work so your team can focus
+on what matters.
 
-### Project Management + Process Setup
-Sprints, roadmaps, async workflows, and the systems that help teams ship consistently and
-predictably.
+### Project Management + Tooling
+From kickoff to delivery, structured project management and smart tooling keeps complexity
+under control and teams on track. Sprints, roadmaps, async workflows, and the systems that help
+teams ship consistently and predictably.
 
 ## How We Work
 
-1. **Discover** — Deep dive into your goals, constraints, and opportunities in 48 hours.
+1. **Discover** — Deep dive into your goals, constraints, and opportunities.
 2. **Define** — Sharp brief. Clear scope. No ambiguity.
 3. **Build** — Quick sprints with full visibility. Real work, fast feedback loops.
 4. **Launch** — Ship with confidence. We stay close through go-live and beyond.
@@ -36,12 +38,19 @@ predictably.
 
 **Founder:** Arun Sarma
 **Experience:** 20+ years across design, product, technology, and leadership
-**Focus:** Next-generation digital transformation for ambitious teams
+**Focus:** Digital transformation for ambitious teams and growing businesses
 
 ScarletFlash operates with speed and precision — embedding fast, thinking sharp, and delivering
-work that moves the needle across strategy, design, and technology.
+work that moves the needle across strategy, design, and technology. Every engagement is built
+on four non-negotiables: speed, clarity, quality, and impact you can measure. Human expertise
+meets AI capability so every decision is sharper, every outcome faster, and every result
+measurable.
 
 ## Contact
 
-To start a project or ask a question, email arun.sarma@live.in. We respond within one business day
-with a clear perspective and no sales runaround.
+To start a project or ask a question, use the contact form at https://scarletflash.io/#contact
+or email arun.sarma@live.in. We respond within one business day.
+
+## Optional
+
+- Full content: https://scarletflash.io/llms-full.txt

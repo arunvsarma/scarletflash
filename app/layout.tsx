@@ -122,6 +122,13 @@ const jsonLd = {
         email: "arun.sarma@live.in",
         jobTitle: "Founder & Principal Consultant",
       },
+      contactPoint: {
+        "@type": "ContactPoint",
+        email: "arun.sarma@live.in",
+        contactType: "customer support",
+        availableLanguage: "English",
+        areaServed: ["IN", "US", "GB"],
+      },
       sameAs: [],
     },
     {
@@ -130,6 +137,16 @@ const jsonLd = {
       url: SITE_URL,
       name: SITE_NAME,
       publisher: { "@id": `${SITE_URL}/#organization` },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/#webpage`,
+      url: SITE_URL,
+      name: `${SITE_NAME} — Where Ideas Ignite`,
+      description: DESCRIPTION,
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+      about: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-US",
     },
     {

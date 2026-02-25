@@ -139,9 +139,8 @@ function WhatWeDo() {
             style={{ fontFamily: outfit }}
           >
             Every engagement is built on four non-negotiables: speed, clarity, quality, and impact
-            you can measure.{" "}
-            <br className="hidden lg:block" />
-            No fluff. No guesswork. Just work that moves the needle!
+            you can measure. Human expertise meets AI capability so every decision is sharper,
+            every outcome faster, and every result measurable.
           </p>
         </div>
 

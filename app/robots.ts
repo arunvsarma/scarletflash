@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const SITE_URL = "https://scarletflash.com";
+const SITE_URL = "https://scarletflash.io";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -13,8 +13,13 @@ export default function robots(): MetadataRoute.Robots {
 
       /* ── AI search & answer engines (allow for AIEO discoverability) ─ */
       {
-        // OpenAI / ChatGPT search integration
+        // OpenAI GPT crawler
         userAgent: "GPTBot",
+        allow: "/",
+      },
+      {
+        // OpenAI SearchGPT / web search
+        userAgent: "OAI-SearchBot",
         allow: "/",
       },
       {
@@ -42,6 +47,26 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "YouBot",
         allow: "/",
       },
+      {
+        // Meta AI / Llama
+        userAgent: "Meta-ExternalAgent",
+        allow: "/",
+      },
+      {
+        // Apple Intelligence / Siri
+        userAgent: "Applebot-Extended",
+        allow: "/",
+      },
+      {
+        // Amazon Alexa / Rufus AI
+        userAgent: "Amazonbot",
+        allow: "/",
+      },
+      {
+        // Diffbot (knowledge graph)
+        userAgent: "Diffbot",
+        allow: "/",
+      },
 
       /* ── AI training-only crawlers (disallow — not search-oriented) ── */
       {
@@ -58,7 +83,6 @@ export default function robots(): MetadataRoute.Robots {
       /* ── Google AI training (separate from search indexing) ─────────── */
       {
         // Google-Extended controls Gemini/Vertex AI training
-        // Set to disallow if you don't want training use; allow for discoverability
         userAgent: "Google-Extended",
         allow: "/",
       },
