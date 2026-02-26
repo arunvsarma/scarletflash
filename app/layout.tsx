@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Afacad, Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+
+const GA_ID = "G-SV5BFR9L8Z";
 
 const afacad = Afacad({
   subsets: ["latin"],
@@ -252,6 +255,18 @@ export default function RootLayout({
       </head>
       <body className={`${afacad.variable} ${outfit.variable} antialiased`}>
         {children}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
