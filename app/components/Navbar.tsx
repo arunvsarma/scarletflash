@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const NAV_LINKS = [
   { label: "SERVICES", href: "#services" },
@@ -11,8 +11,39 @@ const NAV_LINKS = [
 const afacad = "var(--font-afacad), sans-serif";
 
 function Logo() {
+  const [isFlashing, setIsFlashing] = useState(false);
+  const activeRef = useRef(false);
+
+  const flash = () => {
+    if (activeRef.current) return;
+    activeRef.current = true;
+    setIsFlashing(true);
+    setTimeout(() => {
+      activeRef.current = false;
+      setIsFlashing(false);
+    }, 1000);
+  };
+
+  useEffect(() => {
+    let t: ReturnType<typeof setTimeout>;
+
+    function schedule(delay: number) {
+      t = setTimeout(() => {
+        flash();
+        schedule(120_000 + Math.random() * 60_000);
+      }, delay);
+    }
+
+    schedule(30_000); // first flash after 30 s, then every 2–3 min
+    return () => clearTimeout(t);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
-    <a href="/" aria-label="ScarletFlash Consulting — home">
+    <a
+      href="/"
+      aria-label="ScarletFlash Consulting — home"
+      onMouseEnter={flash}
+    >
       <div
         className="relative inline-grid leading-[0] place-items-start"
         style={{ gridTemplateColumns: "max-content", gridTemplateRows: "max-content" }}
@@ -33,7 +64,7 @@ function Logo() {
         >
           <img
             alt=""
-            className="absolute block max-w-none w-full h-full"
+            className={`absolute block max-w-none w-full h-full${isFlashing ? " bolt-flashing" : ""}`}
             src="/lightning-bolt.svg"
           />
         </div>
@@ -59,8 +90,8 @@ export default function Navbar() {
             <a
               key={label}
               href={href}
-              className="flex items-center h-6 px-4 font-bold text-sm tracking-[0.28px] whitespace-nowrap transition-colors hover:text-white"
-              style={{ fontFamily: afacad, color: "#777" }}
+              className="flex items-center h-6 px-4 font-bold text-sm tracking-[0.28px] whitespace-nowrap text-[#777] transition-colors hover:text-white"
+              style={{ fontFamily: afacad }}
             >
               {label}
             </a>

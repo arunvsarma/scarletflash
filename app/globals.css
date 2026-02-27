@@ -73,3 +73,17 @@ textarea:focus-visible {
   animation: node-ripple var(--ring-dur, 4s) ease-out infinite;
   animation-delay: var(--ring-delay, 0s);
 }
+
+/* Lightning bolt periodic flash — double-strike like real lightning */
+@keyframes bolt-flash {
+  0%   { filter: brightness(1)   drop-shadow(0 0  0px transparent); transform: scale(1);    }
+  8%   { filter: brightness(6)   drop-shadow(0 0 12px #fff) drop-shadow(0 0 28px #f22424); transform: scale(1.18); }
+  18%  { filter: brightness(1.3) drop-shadow(0 0  2px #f22424);                            transform: scale(1);    }
+  32%  { filter: brightness(4.5) drop-shadow(0 0  8px #fff) drop-shadow(0 0 20px #ff5500); transform: scale(1.12); }
+  55%  { filter: brightness(1)   drop-shadow(0 0  0px transparent); transform: scale(1);    }
+  100% { filter: brightness(1)   drop-shadow(0 0  0px transparent); transform: scale(1);    }
+}
+.bolt-flashing {
+  animation: bolt-flash 1s ease-out forwards;
+  will-change: filter, transform;
+}
