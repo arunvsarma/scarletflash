@@ -47,7 +47,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="sticky top-0 z-50 border-b border-[#1a1a1a]"
+      className="sticky top-0 z-50"
       style={{ background: "rgba(8,8,8,0.95)", backdropFilter: "blur(8px)" }}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8 flex items-center justify-between h-16 lg:h-24">

@@ -176,7 +176,7 @@ function WhatWeDo() {
   return (
     <section
       id="services"
-      className="py-16 lg:py-24 scroll-mt-16 lg:scroll-mt-24"
+      className="py-16 lg:py-16 scroll-mt-16 lg:scroll-mt-16"
       aria-labelledby="services-heading"
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
@@ -269,7 +269,7 @@ function HowWeWork() {
   return (
     <section
       id="process"
-      className="py-16 lg:py-24 scroll-mt-16 lg:scroll-mt-24"
+      className="py-16 lg:py-16 scroll-mt-16 lg:scroll-mt-16"
       aria-labelledby="process-heading"
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
@@ -323,7 +323,7 @@ function GetInTouch() {
   return (
     <section
       id="contact"
-      className="py-16 lg:py-24 scroll-mt-16 lg:scroll-mt-24"
+      className="py-16 lg:py-16 scroll-mt-16 lg:scroll-mt-16"
       aria-labelledby="contact-heading"
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
@@ -365,7 +365,7 @@ function GetInTouch() {
 
 function Footer() {
   return (
-    <footer className="border-t border-[#1a1a1a] py-6">
+    <footer className="py-6">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <p
           className="text-[#777] text-xs tracking-[1.08px]"
