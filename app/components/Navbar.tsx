@@ -55,7 +55,7 @@ function Logo() {
           <span style={{ color: "#f22424", lineHeight: "normal" }}>SCARLET</span>
           <span style={{ color: "#fff", lineHeight: "normal", letterSpacing: "1.28px" }}>
             F ASH
-          </span>
+          </span><sup style={{ color: "#bfbdbd", fontSize: 10, letterSpacing: 0, verticalAlign: "super", lineHeight: "normal" }}>™</sup>
         </p>
         {/* Lightning bolt overlaid on the "L" */}
         <div
@@ -90,7 +90,7 @@ export default function Navbar() {
             <a
               key={label}
               href={href}
-              className="flex items-center h-6 px-4 font-bold text-sm tracking-[0.28px] whitespace-nowrap text-[#777] transition-colors hover:text-white"
+              className="flex items-center h-6 px-4 font-bold text-sm tracking-[0.28px] whitespace-nowrap text-[#bfbdbd] transition-colors hover:text-white"
               style={{ fontFamily: afacad }}
             >
               {label}
@@ -144,7 +144,7 @@ export default function Navbar() {
               key={label}
               href={href}
               onClick={() => setOpen(false)}
-              className="font-bold text-sm tracking-[0.28px] text-[#777] hover:text-white transition-colors py-2 border-b border-[#1a1a1a]"
+              className="font-bold text-sm tracking-[0.28px] text-[#bfbdbd] hover:text-white transition-colors py-2 border-b border-[#1a1a1a]"
               style={{ fontFamily: afacad }}
             >
               {label}

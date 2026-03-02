@@ -40,7 +40,7 @@ function FormField({
       className={`field-wrap relative bg-[#1a1a1a] ${textarea ? "h-[136px]" : "h-12"} ${fullWidth ? "sm:col-span-2" : ""} ${hasValue ? "has-value" : ""}`}
     >
       <label
-        className="field-label absolute left-4 top-4 font-semibold text-xs text-[#777] tracking-[1.82px] uppercase pointer-events-none z-10"
+        className="field-label absolute left-4 top-4 font-semibold text-xs text-[#bfbdbd] tracking-[1.82px] uppercase pointer-events-none z-10"
         style={{ fontFamily: afacad }}
       >
         {label}
@@ -126,7 +126,7 @@ export default function ContactForm() {
             MESSAGE SENT
           </p>
         </div>
-        <p className="text-[#777] text-sm leading-[20px]" style={{ fontFamily: outfit }}>
+        <p className="text-[#bfbdbd] text-sm leading-[20px]" style={{ fontFamily: outfit }}>
           Thanks for reaching out! We&apos;ll get back to you within one business day.
         </p>
         <button

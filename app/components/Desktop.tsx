@@ -129,10 +129,10 @@ function Hero() {
         </h1>
 
         <p
-          className="mt-8 text-base text-[#777] leading-[24px] max-w-[655px]"
+          className="mt-8 text-base text-[#bfbdbd] leading-[24px] max-w-[655px]"
           style={{ fontFamily: outfit }}
         >
-          ScarletFlash Consulting brings 20+ years of expertise across design, product, and technology to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter. We bring the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
+          ScarletFlash™ Consulting brings 20+ years of expertise across design, product, and technology to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter. We bring the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
         </p>
 
         <div className="mt-10">
@@ -155,17 +155,17 @@ function ServiceCard({
   description: string;
 }) {
   return (
-    <article className="bg-[#1a1a1a] p-6 flex flex-col gap-4">
-      <p className="text-[#777] text-base" style={{ fontFamily: outfit }}>
+    <article className="bg-[#1a1a1a] p-6 flex flex-col gap-4 border-t border-t-transparent hover:border-t-[#c8102e] transition-colors duration-300">
+      <p className="text-[#bfbdbd] text-base" style={{ fontFamily: outfit }}>
         {num}
       </p>
       <h3
-        className="text-[#f5f4f0] text-base font-normal leading-[1.4] tracking-[1.6px] whitespace-pre-wrap"
+        className="text-white text-base font-normal leading-[1.4] tracking-[1.6px] whitespace-pre-wrap"
         style={{ fontFamily: afacad }}
       >
         {title}
       </h3>
-      <p className="text-[#777] text-sm leading-[20px]" style={{ fontFamily: outfit }}>
+      <p className="text-[#bfbdbd] text-sm leading-[20px]" style={{ fontFamily: outfit }}>
         {description}
       </p>
     </article>
@@ -180,22 +180,20 @@ function WhatWeDo() {
       aria-labelledby="services-heading"
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
-        {/* Top row: heading left, description right */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10 lg:mb-12">
-          <div>
-            <SectionEyebrow label="WHAT WE DO" />
-            <h2
-              id="services-heading"
-              className="font-bold text-[42px] sm:text-[52px] leading-[1.1] text-[#f5f4f0]"
-              style={{ fontFamily: afacad }}
-            >
-              EVOLUTION AT
-              <br />
-              SPEED
-            </h2>
-          </div>
+        {/* Heading + description stacked */}
+        <div className="mb-10 lg:mb-12">
+          <SectionEyebrow label="WHAT WE DO" />
+          <h2
+            id="services-heading"
+            className="font-bold text-[42px] sm:text-[52px] leading-[1.1] text-[#f5f4f0]"
+            style={{ fontFamily: afacad }}
+          >
+            EVOLUTION AT
+            <br />
+            SPEED
+          </h2>
           <p
-            className="text-[#777] text-base leading-[24px] max-w-[440px] lg:mb-2"
+            className="text-[#bfbdbd] text-base leading-[24px] max-w-[655px] mt-6"
             style={{ fontFamily: outfit }}
           >
             Every engagement is built on four non-negotiables: speed, clarity, quality, and impact
@@ -242,7 +240,7 @@ function ProcessStep({
     <div className="flex flex-col gap-3 lg:pr-4">
       <div className="flex items-center gap-3">
         <div className="w-8 h-8 flex-shrink-0 border border-[#8b0b1f] bg-[#080808] flex items-center justify-center">
-          <span className="text-[#777] text-base" style={{ fontFamily: afacad }}>
+          <span className="text-[#bfbdbd] text-base" style={{ fontFamily: afacad }}>
             {num}
           </span>
         </div>
@@ -256,7 +254,7 @@ function ProcessStep({
         {label}
       </h3>
       <p
-        className="text-[#777] text-sm leading-[20px]"
+        className="text-[#bfbdbd] text-sm leading-[20px]"
         style={{ fontFamily: outfit, fontWeight: 300 }}
       >
         {description}
@@ -342,7 +340,7 @@ function GetInTouch() {
               SOMETHING.
             </h2>
             <p
-              className="text-[#777] text-sm leading-[20px] max-w-[368px] mb-10"
+              className="text-[#bfbdbd] text-sm leading-[20px] max-w-[368px] mb-10"
               style={{ fontFamily: outfit }}
             >
               Let&apos;s talk. Whether it is a question, a project, or just an idea that you have
@@ -368,10 +366,10 @@ function Footer() {
     <footer className="py-6">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         <p
-          className="text-[#777] text-xs tracking-[1.08px]"
+          className="text-[#bfbdbd] text-xs tracking-[1.08px]"
           style={{ fontFamily: afacad, fontWeight: 500 }}
         >
-          © 2026 ScarletFlash Consulting
+          © 2026 ScarletFlash™ Consulting
         </p>
       </div>
     </footer>

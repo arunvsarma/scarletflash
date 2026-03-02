@@ -37,7 +37,7 @@ export default function Header() {
           {["SERVICES", "PROCESS", "CONTACT"].map((item) => (
             <button
               key={item}
-              className="flex h-6 items-center px-4 py-2 font-bold text-[14px] text-[#777777] tracking-[0.28px] whitespace-nowrap bg-transparent cursor-pointer"
+              className="flex h-6 items-center px-4 py-2 font-bold text-[14px] text-[#bfbdbd] tracking-[0.28px] whitespace-nowrap bg-transparent cursor-pointer"
               style={{ fontFamily: "var(--font-afacad), sans-serif" }}
             >
               {item}

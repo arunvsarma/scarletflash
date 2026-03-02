@@ -63,10 +63,10 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "ScarletFlash Consulting — Where Ideas Ignite",
+        alt: "ScarletFlash™ Consulting — Where Ideas Ignite",
       },
     ],
   },
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${SITE_NAME} — Where Ideas Ignite`,
     description: DESCRIPTION,
-    images: ["/og-image.png"],
+    images: ["/opengraph-image"],
     creator: "@scarletflash",
   },
 
