@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import ContactForm from "./ContactForm";
+import FAQAccordion from "./FAQAccordion";
 
 const afacad = "var(--font-afacad), sans-serif";
 const outfit = "var(--font-outfit), sans-serif";
@@ -263,6 +264,48 @@ function ProcessStep({
   );
 }
 
+/* ─── FAQs ──────────────────────────────────────────────────────────────────── */
+
+function FAQs() {
+  return (
+    <section
+      id="faqs"
+      className="py-16 lg:py-16 scroll-mt-16 lg:scroll-mt-16"
+      aria-labelledby="faqs-heading"
+    >
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
+        <SectionEyebrow label="FAQs" />
+        <div className="flex flex-col lg:flex-row lg:items-start gap-12 lg:gap-16">
+          {/* Left: heading */}
+          <div className="lg:w-[360px] flex-shrink-0">
+            <h2
+              id="faqs-heading"
+              className="font-bold text-[42px] sm:text-[52px] leading-[1.1] text-[#f5f4f0]"
+              style={{ fontFamily: afacad }}
+            >
+              BEFORE YOU
+              <br />
+              REACH OUT
+            </h2>
+            <p
+              className="text-[#bfbdbd] text-base leading-[24px] mt-6"
+              style={{ fontFamily: outfit }}
+            >
+              Answers to the most common questions you might have. Still have questions? That&apos;s
+              what the contact form below is for.
+            </p>
+          </div>
+
+          {/* Right: accordion */}
+          <div className="flex-1 border-t border-[#1a1a1a]">
+            <FAQAccordion />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HowWeWork() {
   return (
     <section
@@ -386,6 +429,7 @@ export default function Desktop() {
         <Hero />
         <WhatWeDo />
         <HowWeWork />
+        <FAQs />
         <GetInTouch />
       </main>
       <Footer />

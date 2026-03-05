@@ -151,34 +151,30 @@ both strategic perspective and practical execution capability to every engagemen
 ## Frequently Asked Questions
 
 **Q: What does ScarletFlash Consulting do?**
-A: ScarletFlash Consulting provides product design, UX, tech strategy, automation, and project
-management services. We blend 20+ years of expertise to help businesses drive digital
-transformation with speed, clarity, and measurable impact.
+A: ScarletFlash Consulting is a creative and technology consulting firm with 20+ years of
+expertise. We help creative agencies, startups, and small businesses with product design & UX,
+tech strategy & automation, and project management — combining human expertise with AI
+capability to deliver fast, measurable results.
 
-**Q: Who does ScarletFlash work with?**
-A: We work with founders, product teams, and enterprises — from early-stage startups validating
-ideas to established companies rethinking how technology supports their business goals.
+**Q: Who is ScarletFlash best suited for?**
+A: ScarletFlash works with three main types of clients: creative agencies looking to sharpen
+their competitive edge, startups ready to turn bold ideas into scalable products, and small
+businesses that want to grow smarter with clearer strategy and execution.
 
-**Q: How does the engagement process work?**
-A: We follow four steps: Discover (understand your goals and constraints), Define (sharp scope,
-no ambiguity), Build (quick sprints with fast feedback), and Launch (confident go-live with
-ongoing support).
+**Q: What services does ScarletFlash offer?**
+A: We offer three core service areas: Product Design & UX (intuitive, user-centered
+experiences), Tech Strategy & Automation (eliminating friction and unlocking efficiency), and
+Project Management & Tooling (structured delivery from kickoff to launch).
 
-**Q: Where is ScarletFlash Consulting based?**
-A: We are based in Bengaluru, India, and serve clients globally across India, the US, UK, and
-other markets.
+**Q: What does the engagement process look like?**
+A: ScarletFlash follows a four-phase process: Discover (understanding your goals and
+constraints), Define (creating a sharp, clear scope), Build (quick sprints with real feedback
+loops), and Launch (full go-live support and planning for what comes next).
 
-**Q: How quickly do you respond to inquiries?**
-A: We respond to all inquiries within one business day with a clear perspective and no sales
-runaround.
-
-**Q: What industries do you work in?**
-A: We are industry-agnostic. Our expertise in design, technology, and project delivery applies
-across SaaS, fintech, e-commerce, healthcare, education, and more.
-
-**Q: Do you offer ongoing retainer engagements?**
-A: Yes. In addition to project-based engagements, we offer retainer arrangements for teams
-that need consistent senior design and technology support over time.
+**Q: How do I start a project with ScarletFlash?**
+A: You can reach out directly through the contact form at scarletflash.io. Share your name,
+email, company or project details, your service interest, and a brief description — whether
+it's a concrete project or just an early idea you've been exploring.
 
 ---
 

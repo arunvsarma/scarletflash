@@ -203,31 +203,39 @@ const jsonLd = {
           name: "What does ScarletFlash Consulting do?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ScarletFlash Consulting provides product design, UX, tech strategy, automation, and project management services. We blend 20+ years of expertise to help businesses drive digital transformation.",
+            text: "ScarletFlash Consulting is a creative and technology consulting firm with 20+ years of expertise. We help creative agencies, startups, and small businesses with product design & UX, tech strategy & automation, and project management — combining human expertise with AI capability to deliver fast, measurable results.",
           },
         },
         {
           "@type": "Question",
-          name: "How does ScarletFlash work with clients?",
+          name: "Who is ScarletFlash best suited for?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "We follow a four-step process: Discover (deep dive into goals and constraints in 48 hours), Define (sharp brief, clear scope), Build (quick sprints with fast feedback loops), and Launch (confident go-live with ongoing support).",
+            text: "ScarletFlash works with three main types of clients: creative agencies looking to sharpen their competitive edge, startups ready to turn bold ideas into scalable products, and small businesses that want to grow smarter with clearer strategy and execution.",
           },
         },
         {
           "@type": "Question",
-          name: "Where is ScarletFlash Consulting based?",
+          name: "What services does ScarletFlash offer?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "ScarletFlash Consulting is based in Bengaluru, India, and serves clients globally.",
+            text: "We offer three core service areas: Product Design & UX (intuitive, user-centered experiences), Tech Strategy & Automation (eliminating friction and unlocking efficiency), and Project Management & Tooling (structured delivery from kickoff to launch).",
           },
         },
         {
           "@type": "Question",
-          name: "How can I contact ScarletFlash Consulting?",
+          name: "What does the engagement process look like?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "You can reach us at arun.sarma@live.in. We respond within one business day with a clear perspective and no sales runaround.",
+            text: "ScarletFlash follows a four-phase process: Discover (understanding your goals and constraints), Define (creating a sharp, clear scope), Build (quick sprints with real feedback loops), and Launch (full go-live support and planning for what comes next).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I start a project with ScarletFlash?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can reach out directly through the contact form at scarletflash.io. Share your name, email, company or project details, your service interest, and a brief description — whether it's a concrete project or just an early idea you've been exploring.",
           },
         },
       ],
