@@ -18,9 +18,9 @@ const outfit = Outfit({
 });
 
 const SITE_URL = "https://scarletflash.io";
-const SITE_NAME = "ScarletFlash Consulting";
+const SITE_NAME = "ScarletFlash | Consulting for Startups & Creative Agencies";
 const DESCRIPTION =
-  "ScarletFlash Consulting blends 20+ years of design, product, technology, and leadership expertise to reimagine possibilities and drive next-generation digital transformation — across product design, tech strategy, and project execution.";
+  "Product design & UX consulting, tech strategy, and automation for startups and agencies in India. ScarletFlash — 20+ years of expertise.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "ScarletFlash™ Consulting — Where Ideas Ignite",
+        alt: "ScarletFlash | Consulting for Startups & Creative Agencies",
       },
     ],
   },
