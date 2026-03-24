@@ -95,7 +95,7 @@ export const metadata: Metadata = {
 
   /* ── Verification placeholders ─────────────────────────────────────── */
   verification: {
-    google: "REPLACE_WITH_GOOGLE_SITE_VERIFICATION_TOKEN",
+    google: "K_syoASQxddTNDYYqakylo04-PdlQVzQpH9Oj_9GnPk",
   },
 };
 
