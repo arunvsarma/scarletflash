@@ -291,7 +291,7 @@ function FAQs() {
               className="text-[#bfbdbd] text-base leading-[24px] mt-6"
               style={{ fontFamily: outfit }}
             >
-              Answers to the most common questions you might have. Still have questions? That&apos;s
+              Answers to the most common questions you might have. Still have questions? That is
               what the contact form below is for.
             </p>
           </div>
@@ -386,8 +386,10 @@ function GetInTouch() {
               className="text-[#bfbdbd] text-sm leading-[20px] max-w-[368px] mb-10"
               style={{ fontFamily: outfit }}
             >
-              Let&apos;s talk. Whether it is a question, a project, or just an idea that you have
+              Let&apos;s talk! Whether it is a question, a project, or just an idea that you have
               been dabbling with. This is where momentum begins!
+              <br /><br />
+              We typically respond within 1-2 business days. Looking forward to connecting with you.
             </p>
 
           </div>

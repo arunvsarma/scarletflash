@@ -11,20 +11,28 @@ const FAQS = [
     a: "ScarletFlash™ Consulting is a creative and technology consulting firm with 20+ years of expertise. We help creative agencies, startups, and small businesses with product design & UX, tech strategy & automation, and project management — combining human expertise with AI capability to deliver fast, measurable results.",
   },
   {
-    q: "Who is ScarletFlash best suited for?",
-    a: "ScarletFlash™ works with three main types of clients: creative agencies looking to sharpen their competitive edge, startups ready to turn bold ideas into scalable products, and small businesses that want to grow smarter with clearer strategy and execution.",
+    q: "What does a typical engagement look like, and how long does it run?",
+    a: "It depends on the problem. A focused strategy sprint might wrap in 2–3 weeks. A full product design and launch engagement could run 2–4 months. We work in defined phases with clear deliverables, so you always know what is happening, what is next, and what it costs before we move forward.",
   },
   {
-    q: "What services does ScarletFlash offer?",
-    a: "We offer three core service areas: Product Design & UX (intuitive, user-centered experiences), Tech Strategy & Automation (eliminating friction and unlocking efficiency), and Project Management & Tooling (structured delivery from kickoff to launch).",
+    q: "What is the budget range for working with ScarletFlash?",
+    a: "We offer flexible pricing based on the scope and complexity of the project. Based on our analysis of the project, we will always provide a clear proposal with detailed pricing before any work begins.",
   },
   {
-    q: "What does the engagement process look like?",
-    a: "ScarletFlash™ follows a four-phase process: Discover (understanding your goals and constraints), Define (creating a sharp, clear scope), Build (quick sprints with real feedback loops), and Launch (full go-live support and planning for what comes next).",
+    q: "What do I actually receive at the end? What are the deliverables?",
+    a: "This is scoped explicitly before any work begins. Depending on the engagement, deliverables may include - UX wireframes and prototypes, tech stack recommendations, workflow documentation, automation builds, project playbooks, reports or go-live support plans. You will always know what you are getting before we start.",
   },
   {
-    q: "How do I start a project with ScarletFlash?",
-    a: "You can reach out directly through the contact form on the website at scarletflash.io. Share your name, email, company or project details, your service interest, and a brief description — whether it's a concrete project or just an early idea you've been exploring.",
+    q: "Do you work with teams that already have in-house designers or developers?",
+    a: "Yes, and often that is the best setup. We can plug into an existing team as a strategic layer, a senior collaborator, or a QA voice - without stepping on toes or duplicating work. Our goal is to complement and elevate your existing capabilities, not replace them.",
+  },
+  {
+    q: "Do you work with clients outside India / remotely?",
+    a: "Not yet. While we have the capability to work remotely with clients anywhere, we are currently focused on building our local presence and relationships in India. We hope to expand our remote services in the future as we grow.",
+  },
+  {
+    q: "What if the scope changes mid-project?",
+    a: "Scope changes are common in consulting engagements. We handle them with clear communication and flexibility. If the scope changes, we will discuss the impact on timeline and cost with you and adjust the project plan accordingly. Our goal is to ensure that you get the best value and results, even if the path changes along the way.",
   },
 ];
 
