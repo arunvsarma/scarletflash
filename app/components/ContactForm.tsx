@@ -84,21 +84,16 @@ export default function ContactForm() {
     setFields((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("loading");
     setErrorMsg("");
 
     try {
-      const body = new URLSearchParams({
-        "form-name": "contact",
-        ...fields,
-      }).toString();
-
-      const res = await fetch("/contact.html", {
+      const res = await fetch("https://formspree.io/f/mgopwpnz", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body,
+        headers: { "Accept": "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify(fields),
       });
 
       if (res.ok) {
@@ -142,14 +137,11 @@ export default function ContactForm() {
 
   return (
     <form
-      name="contact"
-      data-netlify="true"
       className="flex flex-col gap-4"
       onSubmit={handleSubmit}
       noValidate
       aria-label="Contact form"
     >
-      <input type="hidden" name="form-name" value="contact" />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <FormField
           label="YOUR NAME"
