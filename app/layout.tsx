@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Afacad, Outfit } from "next/font/google";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const GA_ID = "G-SV5BFR9L8Z";
@@ -263,6 +264,7 @@ export default function RootLayout({
       </head>
       <body className={`${afacad.variable} ${outfit.variable} antialiased`}>
         {children}
+        <Analytics />
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
