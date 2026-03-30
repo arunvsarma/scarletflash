@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
   /* ── Core ──────────────────────────────────────────────────────────── */
   title: {
-    default: `${SITE_NAME} — Where Ideas Ignite`,
+    default: `${SITE_NAME} — Consulting for Startups & Creative Agencies`,
     template: `%s | ${SITE_NAME}`,
   },
   description: DESCRIPTION,
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Where Ideas Ignite`,
+    title: `${SITE_NAME} — Consulting for Startups & Creative Agencies`,
     description: DESCRIPTION,
     images: [
       {
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   /* ── Twitter / X ───────────────────────────────────────────────────── */
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Where Ideas Ignite`,
+    title: `${SITE_NAME} — Consulting for Startups & Creative Agencies`,
     description: DESCRIPTION,
     images: ["/opengraph-image"],
     creator: "@scarletflash",
