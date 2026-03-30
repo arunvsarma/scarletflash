@@ -2,6 +2,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.scarletflash.io"
+        }
+      ],
       "destination": "https://scarletflash.io/$1",
       "permanent": true
     }
