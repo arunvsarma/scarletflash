@@ -133,11 +133,134 @@ function Hero() {
           className="mt-8 text-base text-[#bfbdbd] leading-[24px] max-w-[655px]"
           style={{ fontFamily: outfit }}
         >
-          ScarletFlash™ Consulting brings 20+ years of expertise across design, product, and technology to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter. We bring the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
+          ScarletFlash™ Consulting brings 20+ years of design, product, and technology expertise to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter - bringing the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
         </p>
 
         <div className="mt-10">
           <PrimaryButton label="START A PROJECT" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ─── About ────────────────────────────────────────────────────────────────── */
+
+const SKILL_ROWS = [
+  {
+    role: "DESIGNER",
+    description: [
+      "Focus on crafting clean, intuitive designs that lives at the intersection of",
+      "user intuition, functional precision, and data intelligence",
+    ],
+    tags: ["Figma + Claude", "Data Vizualization", "User Experience"],
+  },
+  {
+    role: "DEVELOPER",
+    description: [
+      "Write purposeful, functional code that brings design to life, powers complex",
+      "applications, and solves real problems efficiently",
+    ],
+    tags: ["HTML + CSS", "JavaScript", "NodeJS", "ReactJS", "Angular"],
+  },
+  {
+    role: "STRATEGIST",
+    description: [
+      "Craft end-to-end solutions that connect the right data to the right decisions,",
+      "helping brands engage smarter, market adaptively, and stay ahead.",
+    ],
+    tags: ["Actionable Insights", "Solution Architecture", "Strategy Consulting"],
+  },
+];
+
+function SkillTag({ label }: { label: string }) {
+  return (
+    <span
+      className="inline-flex items-center justify-center px-4 py-2 border border-[#1a1a1a] bg-[#080808] text-[#777] text-[10px] tracking-[1.6%] whitespace-nowrap rounded-[24px]"
+      style={{ fontFamily: outfit }}
+    >
+      {label}
+    </span>
+  );
+}
+
+function About() {
+  return (
+    <section
+      id="about"
+      className="py-16 scroll-mt-16"
+      aria-labelledby="about-heading"
+    >
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
+        <SectionEyebrow label="ABOUT" />
+
+        {/* Headline */}
+        <h2
+          id="about-heading"
+          className="font-bold text-[42px] sm:text-[52px] leading-[0.96] text-[#f5f4f0] mb-10"
+          style={{ fontFamily: afacad }}
+        >
+          THE MIND BEHIND<br />THE MOMENTUM
+        </h2>
+
+        {/* Photo + Skill rows */}
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-0">
+
+          {/* Left: photo + name */}
+          <div className="flex-shrink-0 flex flex-col gap-6 lg:w-[263px]">
+            <div className="w-[224px] h-[224px] rounded-2xl overflow-hidden border border-[#2b2a2a]">
+              <img
+                src="/profile.jpg"
+                alt="Arun Sarma — Founder & Principal Consultant"
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+            <p
+              className="text-[14px] font-semibold tracking-[1.6px] leading-[1.29] text-center w-[224px]"
+              style={{ fontFamily: afacad }}
+            >
+              <span className="text-[#f5f4f0]">ARUN V. SARMA</span><br />
+              <span className="text-[#777]">FOUNDER &amp; PRINCIPAL CONSULTANT</span>
+            </p>
+          </div>
+
+          {/* Right: skill rows */}
+          <div className="flex-1 flex flex-col">
+            {SKILL_ROWS.map((row, i) => (
+              <div
+                key={row.role}
+                className={`flex flex-col sm:flex-row sm:items-center gap-4 py-4 ${i < SKILL_ROWS.length - 1 ? "border-b border-[#1a1a1a]" : ""}`}
+              >
+                {/* Role */}
+                <div className="sm:w-[122px] flex-shrink-0">
+                  <span
+                    className="text-[#f5f4f0] text-[16px] font-semibold"
+                    style={{ fontFamily: afacad, letterSpacing: "1.6px" }}
+                  >
+                    {row.role}
+                  </span>
+                </div>
+
+                {/* Description + Tags */}
+                <div className="flex-1 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                  <div className="flex-1 min-w-0">
+                    <p
+                      className="text-[#bfbdbd] text-[12px] leading-[16px]"
+                      style={{ fontFamily: outfit }}
+                    >
+                      {row.description[0]}<br />{row.description[1]}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 flex-shrink-0">
+                    {row.tags.map((tag) => (
+                      <SkillTag key={tag} label={tag} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -183,7 +306,7 @@ function WhatWeDo() {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
         {/* Heading + description stacked */}
         <div className="mb-10 lg:mb-12">
-          <SectionEyebrow label="WHAT WE DO" />
+          <SectionEyebrow label="SERVICES" />
           <h2
             id="services-heading"
             className="font-bold text-[42px] sm:text-[52px] leading-[1.1] text-[#f5f4f0]"
@@ -207,18 +330,18 @@ function WhatWeDo() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <ServiceCard
             num="01"
-            title={"PRODUCT DESIGN\n+ UX"}
-            description="From first click to final step — intuitive, purposeful design that turns complexity into experiences users love."
+            title={"PRODUCT +\nUX DESIGN"}
+            description="We turn tangled workflows and bold ideas into clean, intuitive experiences users love."
           />
           <ServiceCard
             num="02"
-            title={"TECH STRATEGY\n+ AUTOMATION"}
-            description="Strategic solutions that eliminate friction, automate the complex, and unlock real efficiency."
+            title={"TECH STRATEGY +\nAPPLICATION DEVELOPMENT"}
+            description="Smart tech strategy and custom-built applications that turn your vision into working, scalable software."
           />
           <ServiceCard
             num="03"
-            title={"PROJECT MANAGEMENT\n+ TOOLING"}
-            description="From kickoff to delivery, structured project management and smart tooling keeps complexity under control and teams on track."
+            title={"AUTOMATION +\nTOOLING"}
+            description="Smart automation and hand-picked tooling that keeps your team lean, fast, and always in flow."
           />
         </div>
       </div>
@@ -317,7 +440,7 @@ function HowWeWork() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           {/* Left: heading */}
           <div className="lg:w-[360px] flex-shrink-0">
-            <SectionEyebrow label="HOW WE WORK" />
+            <SectionEyebrow label="PROCESS" />
             <h2
               id="process-heading"
               className="font-bold text-[42px] sm:text-[52px] leading-[1.1] text-[#f5f4f0]"
@@ -409,13 +532,42 @@ function GetInTouch() {
 function Footer() {
   return (
     <footer className="py-6">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-8 flex items-center justify-between gap-4">
         <p
           className="text-[#bfbdbd] text-xs tracking-[1.08px]"
           style={{ fontFamily: afacad, fontWeight: 500 }}
         >
           © 2026 ScarletFlash™ Consulting
         </p>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/arunsarma/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="text-[#bfbdbd] hover:text-[#c8102e] transition-colors"
+          >
+            <i className="fa-brands fa-linkedin text-base" />
+          </a>
+          <a
+            href="https://x.com/arunvsarma"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+            className="text-[#bfbdbd] hover:text-[#c8102e] transition-colors"
+          >
+            <i className="fa-brands fa-x-twitter text-base" />
+          </a>
+          <a
+            href="https://www.instagram.com/arunvsarma"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-[#bfbdbd] hover:text-[#c8102e] transition-colors"
+          >
+            <i className="fa-brands fa-instagram text-base" />
+          </a>
+        </div>
       </div>
     </footer>
   );
@@ -429,6 +581,7 @@ export default function Desktop() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <WhatWeDo />
         <HowWeWork />
         <FAQs />

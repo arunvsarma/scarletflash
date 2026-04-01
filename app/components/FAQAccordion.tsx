@@ -7,15 +7,15 @@ const outfit = "var(--font-outfit), sans-serif";
 
 const FAQS = [
   {
-    q: "What does ScarletFlash Consulting do?",
-    a: "ScarletFlash™ Consulting is a creative and technology consulting firm with 20+ years of expertise. We help creative agencies, startups, and small businesses with product design & UX, tech strategy & automation, and project management — combining human expertise with AI capability to deliver fast, measurable results.",
+    q: "What does ScarletFlash™ Consulting do?",
+    a: "ScarletFlash™ Consulting is a creative and technology consulting firm with 20+ years of expertise. We help creative agencies, startups, and small businesses with product + UX design, tech strategy & application development, and automation & tooling — combining human expertise with AI capability to deliver fast, measurable results.",
   },
   {
     q: "What does a typical engagement look like, and how long does it run?",
     a: "It depends on the problem. A focused strategy sprint might wrap in 2–3 weeks. A full product design and launch engagement could run 2–4 months. We work in defined phases with clear deliverables, so you always know what is happening, what is next, and what it costs before we move forward.",
   },
   {
-    q: "What is the budget range for working with ScarletFlash?",
+    q: "What is the budget range for working with ScarletFlash™ Consulting?",
     a: "We offer flexible pricing based on the scope and complexity of the project. Based on our analysis of the project, we will always provide a clear proposal with detailed pricing before any work begins.",
   },
   {

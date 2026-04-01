@@ -2,7 +2,7 @@
 
 > Creative + Tech Consulting — Where Ideas Ignite
 
-ScarletFlash Consulting brings 20+ years of expertise across design, product, and technology to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter. We bring the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
+ScarletFlash Consulting brings 20+ years of design, product, and technology expertise to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter - bringing the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
 
 - Website: https://scarletflash.io
 - Contact: arun.sarma@live.in
@@ -10,20 +10,19 @@ ScarletFlash Consulting brings 20+ years of expertise across design, product, an
 
 ## Services
 
-### Product Design + UX
-From first click to final step — intuitive, purposeful design that turns complexity into
-experiences users love. We prototype, test, and refine until the experience feels effortless,
-because good design converts.
+### Product + UX Design
+We turn tangled workflows and bold ideas into clean, intuitive experiences users love. From
+research and wireframing through prototyping and high-fidelity design — every decision is
+grounded in clarity and usability.
 
-### Tech Strategy + Automation
-Strategic solutions that eliminate friction, automate the complex, and unlock real efficiency.
-Stack audits, automation opportunities, and eliminating repetitive work so your team can focus
-on what matters.
+### Tech Strategy + Application Development
+Smart tech strategy and custom-built applications that turn your vision into working, scalable
+software. Stack evaluation, architecture decisions, and end-to-end development delivered with
+speed and precision.
 
-### Project Management + Tooling
-From kickoff to delivery, structured project management and smart tooling keeps complexity
-under control and teams on track. Sprints, roadmaps, async workflows, and the systems that help
-teams ship consistently and predictably.
+### Automation + Tooling
+Smart automation and hand-picked tooling that keeps your team lean, fast, and always in flow.
+We identify the right tools, eliminate repetitive work, and build systems that scale with you.
 
 ## How We Work
 
@@ -34,26 +33,34 @@ teams ship consistently and predictably.
 
 ## About
 
-**Founder:** Arun Sarma
+**Founder:** Arun V. Sarma — Founder & Principal Consultant
 **Experience:** 20+ years across design, product, technology, and leadership
-**Focus:** Digital transformation for ambitious teams and growing businesses
 
-ScarletFlash operates with speed and precision — embedding fast, thinking sharp, and delivering
-work that moves the needle across strategy, design, and technology. Every engagement is built
-on four non-negotiables: speed, clarity, quality, and impact you can measure. Human expertise
-meets AI capability so every decision is sharper, every outcome faster, and every result
-measurable.
+Arun V. Sarma is the mind behind the momentum — a Designer, Developer, and Strategist who
+brings all three disciplines to every engagement.
+
+**As a Designer:** Focuses on crafting clean, intuitive designs at the intersection of user
+intuition, functional precision, and data intelligence. Tools: Figma + Claude, Data
+Visualization, User Experience.
+
+**As a Developer:** Writes purposeful, functional code that brings design to life, powers
+complex applications, and solves real problems efficiently. Stack: HTML + CSS, JavaScript,
+NodeJS, ReactJS, Angular.
+
+**As a Strategist:** Crafts end-to-end solutions that connect the right data to the right
+decisions, helping brands engage smarter, market adaptively, and stay ahead. Focus areas:
+Actionable Insights, Solution Architecture, Strategy Consulting.
 
 ## Frequently Asked Questions
 
 **Q: What does ScarletFlash Consulting do?**
-A: ScarletFlash Consulting is a creative and technology consulting firm with 20+ years of expertise. We help creative agencies, startups, and small businesses with product design & UX, tech strategy & automation, and project management — combining human expertise with AI capability to deliver fast, measurable results.
+A: ScarletFlash Consulting is a creative and technology consulting firm with 20+ years of expertise. We help creative agencies, startups, and small businesses with product + UX design, tech strategy & application development, and automation & tooling — combining human expertise with AI capability to deliver fast, measurable results.
 
 **Q: Who is ScarletFlash best suited for?**
 A: ScarletFlash works with creative agencies looking to sharpen their competitive edge, startups ready to turn bold ideas into scalable products, and small businesses that want to grow smarter with clearer strategy and execution.
 
 **Q: What services does ScarletFlash offer?**
-A: Three core areas: Product Design & UX, Tech Strategy & Automation, and Project Management & Tooling.
+A: Three core areas: Product + UX Design, Tech Strategy + Application Development, and Automation + Tooling.
 
 **Q: What does the engagement process look like?**
 A: Four phases — Discover, Define, Build, and Launch — focused on speed, clarity, and measurable outcomes.

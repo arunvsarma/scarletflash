@@ -21,7 +21,7 @@ const outfit = Outfit({
 const SITE_URL = "https://scarletflash.io";
 const SITE_NAME = "ScarletFlash | Consulting for Startups & Creative Agencies";
 const DESCRIPTION =
-  "Product design & UX consulting, tech strategy, and automation for startups and agencies in India. ScarletFlash — 20+ years of expertise.";
+  "ScarletFlash™ Consulting — Designer, Developer & Strategist with 20+ years of expertise. Arun V. Sarma helps startups and creative agencies turn vision into velocity through design, technology, and strategy.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -39,11 +39,17 @@ export const metadata: Metadata = {
     "tech strategy",
     "digital transformation",
     "automation",
-    "project management",
-    "agile",
     "startup consulting",
     "Bengaluru consulting",
     "India consulting",
+    "Figma",
+    "React",
+    "Angular",
+    "solution architecture",
+    "strategy consulting",
+    "data visualization",
+    "web development",
+    "designer developer strategist",
   ],
   authors: [{ name: "Arun Sarma", url: SITE_URL }],
   creator: "Arun Sarma",
@@ -122,9 +128,24 @@ const jsonLd = {
       },
       founder: {
         "@type": "Person",
-        name: "Arun Sarma",
+        name: "Arun V. Sarma",
         email: "arun.sarma@live.in",
         jobTitle: "Founder & Principal Consultant",
+        description:
+          "Designer, Developer & Strategist with 20+ years of experience. Crafts clean, intuitive designs; writes purposeful, functional code; and builds end-to-end strategies that connect the right data to the right decisions.",
+        knowsAbout: [
+          "UX Design",
+          "Figma",
+          "Data Visualization",
+          "HTML & CSS",
+          "JavaScript",
+          "NodeJS",
+          "ReactJS",
+          "Angular",
+          "Solution Architecture",
+          "Strategy Consulting",
+          "Actionable Insights",
+        ],
       },
       contactPoint: {
         "@type": "ContactPoint",
@@ -265,18 +286,22 @@ export default function RootLayout({
       <body className={`${afacad.variable} ${outfit.variable} antialiased`}>
         {children}
         <Analytics />
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}');
-          `}
-        </Script>
+        {process.env.NODE_ENV === "production" && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );

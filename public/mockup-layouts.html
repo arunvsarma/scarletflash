@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout Mockups</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #080808; color: #f5f4f0; font-family: 'Outfit', sans-serif; padding: 48px 32px; }
+    h1 { font-family: 'Afacad', sans-serif; font-size: 13px; letter-spacing: 2px; color: #555; margin-bottom: 48px; }
+
+    .option { margin-bottom: 72px; }
+    .option-label {
+      font-family: 'Afacad', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #c8102e;
+      margin-bottom: 28px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    .section-eyebrow {
+      font-family: 'Afacad', sans-serif;
+      font-size: 11px;
+      letter-spacing: 1.26px;
+      color: #c8102e;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 28px; }
+    .cols3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; margin-bottom: 28px; }
+
+    /* ── Option 1: Inline separators ── */
+    .opt1-row { margin-bottom: 20px; }
+    .opt1-label {
+      font-family: 'Afacad', sans-serif;
+      font-size: 11px;
+      letter-spacing: 1.26px;
+      color: #c8102e;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .opt1-items {
+      font-family: 'Afacad', sans-serif;
+      font-size: 15px;
+      color: #bfbdbd;
+      letter-spacing: 0.5px;
+    }
+    .opt1-items span { color: #555; margin: 0 8px; }
+    .opt1-sub { font-family: 'Outfit', sans-serif; font-size: 11px; color: #555; margin-left: 6px; }
+
+    /* ── Option 2: Stacked list ── */
+    .opt2-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .opt2-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      font-family: 'Afacad', sans-serif;
+      font-size: 15px;
+      color: #bfbdbd;
+      letter-spacing: 0.5px;
+    }
+    .opt2-list li::before {
+      content: '—';
+      color: #c8102e;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+    .opt2-sub { font-family: 'Outfit', sans-serif; font-size: 11px; color: #555; margin-left: 4px; }
+
+    /* ── Option 3: Large spaced text ── */
+    .opt3-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .opt3-item {
+      font-family: 'Afacad', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #2a2a2a;
+      letter-spacing: 1px;
+      line-height: 1.3;
+      transition: color 0.2s;
+    }
+    .opt3-item.highlight { color: #bfbdbd; }
+    .opt3-sub { font-family: 'Outfit', sans-serif; font-size: 11px; color: #555; margin-left: 10px; font-weight: 400; vertical-align: middle; }
+
+    /* ── Option 4: Minimal pills ── */
+    .opt4-wrap { display: flex; flex-wrap: wrap; gap: 8px; }
+    .opt4-pill {
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-family: 'Afacad', sans-serif;
+      font-size: 13px;
+      color: #bfbdbd;
+      letter-spacing: 0.5px;
+    }
+    .opt4-pill .via { color: #444; font-size: 11px; margin-left: 6px; font-family: 'Outfit', sans-serif; }
+  </style>
+</head>
+<body>
+
+  <h1>LAYOUT MOCKUPS — COMPANIES / BRANDS / TOOLS</h1>
+
+  <!-- ── Option 1 ── -->
+  <div class="option">
+    <div class="option-label">OPTION 1 — INLINE WITH SEPARATORS</div>
+    <div class="cols">
+      <div>
+        <div class="opt1-label">COMPANIES I'VE WORKED WITH</div>
+        <div class="opt1-items">
+          Akamai<span>/</span>Ogilvy<span>/</span>C5i<span>/</span>Sherston Education
+        </div>
+      </div>
+      <div>
+        <div class="opt1-label">BRANDS I'VE HELPED</div>
+        <div class="opt1-items">
+          Lenovo<span class="opt1-sub">via Ogilvy</span><span>/</span>Microsoft India<span class="opt1-sub">via C5i</span><span>/</span>IBM<span class="opt1-sub">via Ogilvy</span><span>/</span>Oxford &amp; Cambridge<span class="opt1-sub">via Sherston</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="opt1-label">TOOLS &amp; TECHNOLOGIES</div>
+      <div class="opt1-items">
+        Figma<span>/</span>HTML + CSS<span>/</span>JavaScript<span>/</span>Node.js<span>/</span>React.js<span>/</span>Angular<span>/</span>Jira<span>/</span>Trello<span>/</span>Notion<span>/</span>Linear
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Option 2 ── -->
+  <div class="option">
+    <div class="option-label">OPTION 2 — STACKED LIST WITH RED DASH</div>
+    <div class="cols">
+      <div>
+        <div class="opt1-label">COMPANIES I'VE WORKED WITH</div>
+        <ul class="opt2-list">
+          <li>Akamai</li>
+          <li>Ogilvy</li>
+          <li>C5i</li>
+          <li>Sherston Education</li>
+        </ul>
+      </div>
+      <div>
+        <div class="opt1-label">BRANDS I'VE HELPED</div>
+        <ul class="opt2-list">
+          <li>Lenovo <span class="opt2-sub">via Ogilvy</span></li>
+          <li>Microsoft India <span class="opt2-sub">via C5i</span></li>
+          <li>IBM <span class="opt2-sub">via Ogilvy</span></li>
+          <li>Oxford &amp; Cambridge <span class="opt2-sub">via Sherston</span></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="opt1-label">TOOLS &amp; TECHNOLOGIES</div>
+      <div style="columns: 2; column-gap: 32px;">
+        <ul class="opt2-list" style="break-inside: avoid;">
+          <li>Figma</li>
+          <li>HTML + CSS</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>React.js</li>
+          <li>Angular</li>
+          <li>Jira</li>
+          <li>Trello</li>
+          <li>Notion</li>
+          <li>Linear</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Option 3 ── -->
+  <div class="option">
+    <div class="option-label">OPTION 3 — LARGE FADED TYPE</div>
+    <div class="cols">
+      <div>
+        <div class="opt1-label">COMPANIES I'VE WORKED WITH</div>
+        <div class="opt3-items">
+          <div class="opt3-item highlight">Akamai</div>
+          <div class="opt3-item highlight">Ogilvy</div>
+          <div class="opt3-item highlight">C5i</div>
+          <div class="opt3-item highlight">Sherston Education</div>
+        </div>
+      </div>
+      <div>
+        <div class="opt1-label">BRANDS I'VE HELPED</div>
+        <div class="opt3-items">
+          <div class="opt3-item highlight">Lenovo <span class="opt3-sub">via Ogilvy</span></div>
+          <div class="opt3-item highlight">Microsoft India <span class="opt3-sub">via C5i</span></div>
+          <div class="opt3-item highlight">IBM <span class="opt3-sub">via Ogilvy</span></div>
+          <div class="opt3-item highlight">Oxford &amp; Cambridge <span class="opt3-sub">via Sherston</span></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="opt1-label">TOOLS &amp; TECHNOLOGIES</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 0 40px;">
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Figma</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">HTML + CSS</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">JavaScript</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Node.js</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">React.js</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Angular</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Jira</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Trello</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Notion</div>
+        <div class="opt3-item" style="font-size:18px; color:#3a3a3a;">Linear</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Option 4 ── -->
+  <div class="option">
+    <div class="option-label">OPTION 4 — MINIMAL PILLS</div>
+    <div class="cols">
+      <div>
+        <div class="opt1-label">COMPANIES I'VE WORKED WITH</div>
+        <div class="opt4-wrap">
+          <div class="opt4-pill">Akamai</div>
+          <div class="opt4-pill">Ogilvy</div>
+          <div class="opt4-pill">C5i</div>
+          <div class="opt4-pill">Sherston Education</div>
+        </div>
+      </div>
+      <div>
+        <div class="opt1-label">BRANDS I'VE HELPED</div>
+        <div class="opt4-wrap">
+          <div class="opt4-pill">Lenovo <span class="via">via Ogilvy</span></div>
+          <div class="opt4-pill">Microsoft India <span class="via">via C5i</span></div>
+          <div class="opt4-pill">IBM <span class="via">via Ogilvy</span></div>
+          <div class="opt4-pill">Oxford &amp; Cambridge <span class="via">via Sherston</span></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="opt1-label">TOOLS &amp; TECHNOLOGIES</div>
+      <div class="opt4-wrap">
+        <div class="opt4-pill">Figma</div>
+        <div class="opt4-pill">HTML + CSS</div>
+        <div class="opt4-pill">JavaScript</div>
+        <div class="opt4-pill">Node.js</div>
+        <div class="opt4-pill">React.js</div>
+        <div class="opt4-pill">Angular</div>
+        <div class="opt4-pill">Jira</div>
+        <div class="opt4-pill">Trello</div>
+        <div class="opt4-pill">Notion</div>
+        <div class="opt4-pill">Linear</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
