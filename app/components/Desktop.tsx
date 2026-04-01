@@ -248,7 +248,7 @@ function About() {
                       className="text-[#bfbdbd] text-[12px] leading-[16px]"
                       style={{ fontFamily: outfit }}
                     >
-                      {row.description[0]}<br />{row.description[1]}
+                      {row.description[0]}<br className="hidden lg:block" />{row.description[1]}
                     </p>
                   </div>
 
