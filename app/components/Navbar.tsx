@@ -65,7 +65,7 @@ function Logo() {
           style={{ width: 42, height: 44, marginLeft: 111 }}
         >
           <img
-            alt=""
+            alt="ScarletFlash Consulting"
             className={`absolute block max-w-none w-full h-full${isFlashing ? " bolt-flashing" : ""}`}
             src="/lightning-bolt.svg"
           />

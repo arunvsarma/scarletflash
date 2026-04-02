@@ -12,7 +12,7 @@ and retrieval. It follows the llmstxt.org specification as the full-detail compa
 **Name:** ScarletFlash Consulting
 **Tagline:** Where Ideas Ignite
 **Website:** https://scarletflash.io
-**Contact:** arun.sarma@live.in
+**Contact:** https://www.scarletflash.io/#contact
 **Location:** Bengaluru, India
 **Serving:** Global clients across India, US, UK, and beyond
 
@@ -129,7 +129,6 @@ Let's talk. Whether it is a question, a project, or just an idea that you have b
 with. This is where momentum begins.
 
 **Contact form:** https://scarletflash.io/#contact
-**Email:** arun.sarma@live.in
 **Response time:** Within one business day
 
 ---
@@ -138,7 +137,6 @@ with. This is where momentum begins.
 
 **Name:** Arun V. Sarma
 **Title:** Founder & Principal Consultant
-**Email:** arun.sarma@live.in
 **Experience:** 20+ years across design, product, technology, and leadership
 
 Arun V. Sarma is the mind behind the momentum — a Designer, Developer, and Strategist who

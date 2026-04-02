@@ -24,7 +24,7 @@ export default function Header() {
             {/* Lightning bolt SVG overlaid on top of text at the "L" position */}
             <div className="[grid-column:1] [grid-row:1] h-[44px] w-[42px] ml-[111px] mt-0 relative">
               <img
-                alt="ScarletFlash Consulting Logo"
+                alt="ScarletFlash Consulting"
                 className="absolute block max-w-none w-full h-full"
                 src="/lightning-bolt.svg"
               />

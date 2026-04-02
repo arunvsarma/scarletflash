@@ -5,7 +5,7 @@
 ScarletFlash Consulting brings 20+ years of design, product, and technology expertise to help creative agencies sharpen their edge, startups turn bold ideas into scalable products, and small businesses grow smarter - bringing the clarity, strategy, and execution to move you forward with confidence and measurable momentum.
 
 - Website: https://scarletflash.io
-- Contact: arun.sarma@live.in
+- Contact: https://www.scarletflash.io/#contact
 - Location: Bengaluru, India (serving clients globally)
 
 ## Services
@@ -70,8 +70,7 @@ A: Use the contact form at scarletflash.io. Share your project details and we'll
 
 ## Contact
 
-To start a project or ask a question, use the contact form at https://scarletflash.io/#contact
-or email arun.sarma@live.in. We respond within one business day.
+To start a project or ask a question, use the contact form at https://scarletflash.io/#contact. We respond within one business day.
 
 ## Optional
 

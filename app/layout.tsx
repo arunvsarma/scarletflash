@@ -19,7 +19,7 @@ const outfit = Outfit({
 });
 
 const SITE_URL = "https://scarletflash.io";
-const SITE_NAME = "ScarletFlash | Consulting for Startups & Creative Agencies";
+const SITE_NAME = "ScarletFlash™";
 const DESCRIPTION =
   "ScarletFlash™ Consulting — Designer, Developer & Strategist with 20+ years of expertise. Arun V. Sarma helps startups and creative agencies turn vision into velocity through design, technology, and strategy.";
 
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
   /* ── Core ──────────────────────────────────────────────────────────── */
   title: {
-    default: `${SITE_NAME} — Consulting for Startups & Creative Agencies`,
+    default: `${SITE_NAME} | Consulting for Startups & Creative Agencies`,
     template: `%s | ${SITE_NAME}`,
   },
   description: DESCRIPTION,
@@ -126,27 +126,7 @@ const jsonLd = {
         addressLocality: "Bengaluru",
         addressCountry: "IN",
       },
-      founder: {
-        "@type": "Person",
-        name: "Arun V. Sarma",
-        email: "arun.sarma@live.in",
-        jobTitle: "Founder & Principal Consultant",
-        description:
-          "Designer, Developer & Strategist with 20+ years of experience. Crafts clean, intuitive designs; writes purposeful, functional code; and builds end-to-end strategies that connect the right data to the right decisions.",
-        knowsAbout: [
-          "UX Design",
-          "Figma",
-          "Data Visualization",
-          "HTML & CSS",
-          "JavaScript",
-          "NodeJS",
-          "ReactJS",
-          "Angular",
-          "Solution Architecture",
-          "Strategy Consulting",
-          "Actionable Insights",
-        ],
-      },
+      founder: { "@id": `${SITE_URL}/#arun-sarma` },
       contactPoint: {
         "@type": "ContactPoint",
         email: "arun.sarma@live.in",
@@ -214,6 +194,36 @@ const jsonLd = {
             },
           },
         ],
+      },
+    },
+    {
+      "@type": "Person",
+      "@id": `${SITE_URL}/#arun-sarma`,
+      name: "Arun V. Sarma",
+      url: SITE_URL,
+      email: "arun.sarma@live.in",
+      jobTitle: "Founder & Principal Consultant",
+      description:
+        "Designer, Developer & Strategist with 20+ years of experience. Crafts clean, intuitive designs; writes purposeful, functional code; and builds end-to-end strategies that connect the right data to the right decisions.",
+      image: `${SITE_URL}/profile.jpg`,
+      worksFor: { "@id": `${SITE_URL}/#organization` },
+      knowsAbout: [
+        "UX Design",
+        "Figma",
+        "Data Visualization",
+        "HTML & CSS",
+        "JavaScript",
+        "NodeJS",
+        "ReactJS",
+        "Angular",
+        "Solution Architecture",
+        "Strategy Consulting",
+        "Actionable Insights",
+      ],
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Bengaluru",
+        addressCountry: "IN",
       },
     },
     {
